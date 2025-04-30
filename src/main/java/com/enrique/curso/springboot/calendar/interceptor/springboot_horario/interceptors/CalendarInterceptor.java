@@ -29,10 +29,9 @@ public class CalendarInterceptor implements HandlerInterceptor{
             throws Exception {
                 Calendar calendar = Calendar.getInstance();
                 Integer hour = calendar.get(Calendar.HOUR_OF_DAY);
-                // System.out.println(">>>>>>" + hour);
                 if(hour>open && hour<close){
-                    StringBuilder message = new StringBuilder("Welcome");
-                    message.append("Our buisiness hours is from ");
+                    StringBuilder message = new StringBuilder("Welcome. ");
+                    message.append("Our business hours is from ");
                     message.append(open);
                     message.append(" hrs to ");
                     message.append(close);
